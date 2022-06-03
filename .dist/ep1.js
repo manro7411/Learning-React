@@ -190,9 +190,34 @@
 //index of fine 
 //find index 
 
-const colors = ["red","green","blue","purple","white"]
-const index = colors.indexOf("yellow")
-console.log(index)
+// const colors = ["red","green","blue","purple","white"]
+// const index = colors.indexOf("yellow")
+// console.log(index)
 
-const search = colors.find(element=>element==="green")
-console.log(search)
+// const search = colors.find(element=>element==="green")
+// console.log(search)
+
+//--------------------------------------------------
+
+//Array map
+const number = [10,20,30,40]
+console.log(`number = ${number}`)
+const result = number.map(e=e*e)
+console.log(`${result}`)
+
+const re = data.map(e=>{
+    return e
+})
+console.log(re)
+
+ const data = [
+     {day:01062564,weater:"hot"},
+     {day:01062564,weater:"cold"},
+     {day:01062564,weater:"ranny"}
+ ]
+ const answer = data.map(e=>e.weater)
+
+ console.log(answer)
+
+
+//--------------------------------------------------
