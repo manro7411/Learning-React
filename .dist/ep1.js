@@ -39,17 +39,37 @@
 // }
 // console.log(customer);
 
-const username="Ratchanon"
-const age = 20
-const address = "Samutprakarn"
+// -------------------------------------------------
+// const username="Ratchanon"
+// const age = 20
+// const address = "Samutprakarn"
 
-const customer = {
-    customerName : username,
-    age:age,
-    address: address,
-    showdata(){
-        console.log("Name = " +this.customerName)
-    }
-}
-console.log(customer);
-customer.showdata();
+// const customer = {
+//     customerName : username,
+//     age:age,
+//     address: address,
+//     showdata(){
+//         console.log("Name = " +this.customerName)
+//     }
+// }
+// console.log(customer);
+// customer.showdata();
+// -------------------------------------------------
+//String 
+
+// multiline String สามารถทำงานกับข้อความยาวๆได้ โดยการขึ้นบรรทัดใหม่แล้วไม่มีข้อผิดพลาดเกิดขึ้นโดยใช้ `
+
+// interpolation 
+
+// -- String --
+// multiline ==> '' to `
+
+let customerName = "Nadia";
+let addresss = "xx / xx"
+let tell = "09xxxxxxxx"
+
+const address = `customername : ${customerName}
+address :  ${addresss}
+tel :  ${tell}`
+
+console.log(address);
