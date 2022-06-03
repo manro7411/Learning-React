@@ -163,24 +163,36 @@
 // loop array
 //for loop ,foreach , forof
 
- const data = [10,20,30,40,50]
-for(let index = 0 ; index <data.length;index++){
-    if (data[i] >=30)
-    break
-    console.log(`${i} = ${data[i]}`);
-}
+//  const data = [10,20,30,40,50]
+// for(let index = 0 ; index <data.length;index++){
+//     if (data[i] >=30)
+//     break
+//     console.log(`${i} = ${data[i]}`);
+// }
 
-data.forEach(e =>{
-    if(e>=30){
-        console.log("Hello")
-    }
-    console.log(`${e}`)
-}  ) 
+// data.forEach(e =>{
+//     if(e>=30){
+//         console.log("Hello")
+//     }
+//     console.log(`${e}`)
+// }  ) 
 
-for ( const element of data){
-    if (element >=30) {
-        break
-    }
-    console.log(`${element}`)
-}
+// for ( const element of data){
+//     if (element >=30) {
+//         break
+//     }
+//     console.log(`${element}`)
+// }
 
+//--------------------------------------------------
+
+// find data in array
+//index of fine 
+//find index 
+
+const colors = ["red","green","blue","purple","white"]
+const index = colors.indexOf("yellow")
+console.log(index)
+
+const search = colors.find(element=>element==="green")
+console.log(search)
