@@ -119,14 +119,31 @@
 
 //--------------------------------------------------
 //default parameter
-getDataCustomer = (customerName, customerAddress = "Bangkok") => {
-    const address = `name : ${customerName}
-    address : ${customerAddress}`
-    return address;
-}
-console.log(getDataCustomer("Ratcanon", "Samutprakarn"));
-console.log(getDataCustomer("Nadia"))
+// getDataCustomer = (customerName, customerAddress = "Bangkok") => {
+//     const address = `name : ${customerName}
+//     address : ${customerAddress}`
+//     return address;
+// }
+// console.log(getDataCustomer("Ratcanon", "Samutprakarn"));
+// console.log(getDataCustomer("Nadia"))
 //--------------------------------------------------
+
+
+//join and concat 
+const data =[100,200,300]
+console.log(data)
+
+const result = data .join("$")
+console.log(result)
+
+const data1 = [100,200,300]
+const data2 = [400,500]
+
+const alldata =data1.concat(data2)
+console.log(alldata)
+
+//--------------------------------------------------
+
 
 
 
