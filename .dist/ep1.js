@@ -89,21 +89,66 @@
 // Rest Operator ==> ใช้ในการส่งค่า parameter เข้าไปทำงานใน function โดยไม่จำกัดเครื่องหมาย ...
 // Rest Parameter 
 
-summation=(x,y) =>{
-    return x+y
-}
-summation=(x,y,z,a) =>{
-    return x+y+z+a
-}
-console.log(summation(1,2));
-console.log(summation(1,2,3,4));
+// summation=(x,y) =>{
+//     return x+y
+// }
+// summation=(x,y,z,a) =>{
+//     return x+y+z+a
+// }
+// console.log(summation(1,2));
+// console.log(summation(1,2,3,4));
 
-summation=(...numberArr) =>{
-    let total=0
-    for (let number of numberArr)   total+=number//1 + 2
-    return total
+// summation=(...numberArr) =>{
+//     let total=0
+//     for (let number of numberArr)   total+=number//1 + 2
+//     return total
 
-}
-console.log(summation(1,2,3,4));
+// }
+// console.log(summation(1,2,3,4));
+
+//--------------------------------------------------
+
+//destructuring
+
+//Array
+const colors =["green","red","yellow"]
+const [green,red,yellow] = colors
+
+console.log(green)
+console.log(red)
+console.log(yellow)
+
+
+
+//--------------------------------------------------
+
+
+
+
+//--------------------------------------------------
+
+
+
+
+//--------------------------------------------------
+
+
+
+
+//--------------------------------------------------
+
+
+
+
+//--------------------------------------------------
+
+
+
+
+//--------------------------------------------------
+
+
+
+
 
 //--------------------------------------------------
