@@ -130,21 +130,34 @@
 
 
 //join and concat 
-const data =[100,200,300]
-console.log(data)
+// const data =[100,200,300]
+// console.log(data)
 
-const result = data .join("$")
-console.log(result)
+// const result = data .join("$")
+// console.log(result)
 
-const data1 = [100,200,300]
-const data2 = [400,500]
+// const data1 = [100,200,300]
+// const data2 = [400,500]
 
-const alldata =data1.concat(data2)
-console.log(alldata)
+// const alldata =data1.concat(data2)
+// console.log(alldata)
 
 //--------------------------------------------------
 
-
+// push pop shift unshift
+const data = [10,20,30]
+console.log(data)
+data.push(500)
+data.push(1000)
+data.push(5200)
+console.log(data)
+data.pop()
+console.log(data)  
+data.shift()
+data.shift()
+console.log(data)
+data.unshift(50)
+console.log(data)
 
 
 
