@@ -145,21 +145,42 @@
 //--------------------------------------------------
 
 // push pop shift unshift
-const data = [10,20,30]
-console.log(data)
-data.push(500)
-data.push(1000)
-data.push(5200)
-console.log(data)
-data.pop()
-console.log(data)  
-data.shift()
-data.shift()
-console.log(data)
-data.unshift(50)
-console.log(data)
+// const data = [10,20,30]
+// console.log(data)
+// data.push(500)
+// data.push(1000)
+// data.push(5200)
+// console.log(data)
+// data.pop()
+// console.log(data)  
+// data.shift()
+// data.shift()
+// console.log(data)
+// data.unshift(50)
+// console.log(data)
 
+//--------------------------------------------------
+// loop array
+//for loop ,foreach , forof
 
+ const data = [10,20,30,40,50]
+for(let index = 0 ; index <data.length;index++){
+    if (data[i] >=30)
+    break
+    console.log(`${i} = ${data[i]}`);
+}
 
+data.forEach(e =>{
+    if(e>=30){
+        console.log("Hello")
+    }
+    console.log(`${e}`)
+}  ) 
 
+for ( const element of data){
+    if (element >=30) {
+        break
+    }
+    console.log(`${element}`)
+}
 
