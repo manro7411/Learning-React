@@ -55,8 +55,8 @@
 // console.log(customer);
 // customer.showdata();
 // -------------------------------------------------
-//String 
 
+//String 
 // multiline String สามารถทำงานกับข้อความยาวๆได้ โดยการขึ้นบรรทัดใหม่แล้วไม่มีข้อผิดพลาดเกิดขึ้นโดยใช้ `
 
 // interpolation 
@@ -64,12 +64,26 @@
 // -- String --
 // multiline ==> '' to `
 
-let customerName = "Nadia";
-let addresss = "xx / xx"
-let tell = "09xxxxxxxx"
+// let customerName = "Nadia";
+// let addresss = "xx / xx"
+// let tell = "09xxxxxxxx"
 
-const address = `customername : ${customerName}
-address :  ${addresss}
-tel :  ${tell}`
+// const address = `customername : ${customerName}
+// address :  ${addresss}
+// tel :  ${tell}`
 
-console.log(address);
+// console.log(address);
+//-------------------------------------------------
+
+// spread Operator (...)
+const newArr = [100,200,300,400]
+const data = [10,20,...newArr]
+
+const colors = ["green","blue","white"]
+const allcolors = ["red","yellow",...colors]
+const newcolors = ["black","purple"]
+allcolors.push(...newcolors)
+
+console.log(allcolors)
+
+console.log(data)
