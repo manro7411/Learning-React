@@ -111,44 +111,25 @@
 //destructuring
 
 //Array
-const colors =["green","red","yellow"]
-const [green,red,yellow] = colors
-
-console.log(green)
-console.log(red)
-console.log(yellow)
-
-
+// const colors = ["green", "red", "yellow"]
+// const [green, red, yellow] = colors
+// console.log(green)
+// console.log(red)
+// console.log(yellow)
 
 //--------------------------------------------------
-
-
-
-
-//--------------------------------------------------
-
-
-
-
-//--------------------------------------------------
-
-
-
-
-//--------------------------------------------------
-
-
-
-
-//--------------------------------------------------
-
-
-
-
+//default parameter
+getDataCustomer = (customerName, customerAddress = "Bangkok") => {
+    const address = `name : ${customerName}
+    address : ${customerAddress}`
+    return address;
+}
+console.log(getDataCustomer("Ratcanon", "Samutprakarn"));
+console.log(getDataCustomer("Nadia"))
 //--------------------------------------------------
 
 
 
 
 
-//--------------------------------------------------
+
