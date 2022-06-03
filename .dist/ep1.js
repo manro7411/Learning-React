@@ -76,14 +76,34 @@
 //-------------------------------------------------
 
 // spread Operator (...)
-const newArr = [100,200,300,400]
-const data = [10,20,...newArr]
+// const newArr = [100,200,300,400]
+// const data = [10,20,...newArr]
+// const colors = ["green","blue","white"]
+// const allcolors = ["red","yellow",...colors]
+// const newcolors = ["black","purple"]
+// allcolors.push(...newcolors)
+// console.log(allcolors)
+// console.log(data)
 
-const colors = ["green","blue","white"]
-const allcolors = ["red","yellow",...colors]
-const newcolors = ["black","purple"]
-allcolors.push(...newcolors)
+//--------------------------------------------------
+// Rest Operator ==> ใช้ในการส่งค่า parameter เข้าไปทำงานใน function โดยไม่จำกัดเครื่องหมาย ...
+// Rest Parameter 
 
-console.log(allcolors)
+summation=(x,y) =>{
+    return x+y
+}
+summation=(x,y,z,a) =>{
+    return x+y+z+a
+}
+console.log(summation(1,2));
+console.log(summation(1,2,3,4));
 
-console.log(data)
+summation=(...numberArr) =>{
+    let total=0
+    for (let number of numberArr)   total+=number//1 + 2
+    return total
+
+}
+console.log(summation(1,2,3,4));
+
+//--------------------------------------------------
