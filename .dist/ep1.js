@@ -200,24 +200,47 @@
 //--------------------------------------------------
 
 //Array map
-const number = [10,20,30,40]
-console.log(`number = ${number}`)
-const result = number.map(e=e*e)
-console.log(`${result}`)
+// const number = [10,20,30,40]
+// console.log(`number = ${number}`)
+// const result = number.map(e=e*e)
+// console.log(`${result}`)
 
-const re = data.map(e=>{
-    return e
-})
-console.log(re)
+// const re = data.map(e=>{
+//     return e
+// })
+// console.log(re)
 
- const data = [
-     {day:01062564,weater:"hot"},
-     {day:01062564,weater:"cold"},
-     {day:01062564,weater:"ranny"}
- ]
- const answer = data.map(e=>e.weater)
+//  const data = [
+//      {day:01062564,weater:"hot"},
+//      {day:01062564,weater:"cold"},
+//      {day:01062564,weater:"ranny"}
+//  ]
+//  const answer = data.map(e=>e.weater)
 
- console.log(answer)
+//  console.log(answer)
 
 
+//--------------------------------------------------
+//Array Reduce
+const data =[10,20,30,40]
+const mapdata = data.map(e=>100)
+console.log(mapdata)
+const filterdata = data.filter(e=>e>20)
+console.log(filterdata)
+//array.reduce(()=>{},ค่าเริ่มต้น)
+
+const ttt=data.reduce((value,e)=>{ //total = 0
+    console.log(value)
+    const total = e+value
+    return total
+},0)
+console.log(ttt)
+
+const cart = [
+    {name:"ssss",price:222},
+    {name:"bbb",price:333},
+    {name:"aaa",price:111}
+]
+const x = cart.reduce((value,e)=>e.price+value,0)
+console.log(x)
 //--------------------------------------------------
